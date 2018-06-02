@@ -40,4 +40,6 @@ app.get('/', function(req, res){
     })
 })
 
-app.listen('5000');
+var port = process.env.PORT || 8000
+
+app.listen(port);
