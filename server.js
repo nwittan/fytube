@@ -40,6 +40,7 @@ app.get('/', function(req, res){
     })
 })
 
-var port = process.env.PORT || 8000
-
-app.listen(port);
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log('Express server listening on port', port)
+});
