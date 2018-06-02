@@ -1,9 +1,10 @@
+console.log('Before load');
 var express = require('express');
 var request = require('request');
 var app     = express();
 
 const Youtube = require('youtube-stream-url');
-
+console.log('After load');
 app.get('/video/*', function(req, res){
 	var id = req.path;
 	id = id.substring(7, id.length);
