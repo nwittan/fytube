@@ -39,9 +39,9 @@ app.get('/', function(req, res){
     })
 })
 
-var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+var server_port = process.env.YOUR_PORT || process.env.PORT || 8080;
 console.log('Port =%d', server_port);
-var server_host = process.env.YOUR_HOST || '0.0.0.0';
+var server_host = process.env.YOUR_HOST || '127.0.0.1';
 app.listen(server_port, server_host, function() {
     console.log('Listening on port %d', server_port);
 });
